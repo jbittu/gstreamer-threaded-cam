@@ -1,0 +1,17 @@
+# Multithreaded Camera Streaming System
+
+This is a C++14-based camera streaming simulation using GStreamer, POSIX threads, and a custom logging system. Designed to mimic embedded Linux development using WSL2.
+
+## Features
+- GStreamer pipeline launch from multithreaded C++ application
+- Modular logging system
+- Simulated telemetry via thread control
+- Designed for compatibility with embedded platforms
+
+## Tech Stack
+C++14 · GStreamer · POSIX Threads · Linux System Programming · WSL2
+
+## How to Build
+```bash
+g++ src/cam_stream.cpp src/logger.cpp -Iinclude -std=c++14 -pthread -o cam_stream
+./cam_stream
